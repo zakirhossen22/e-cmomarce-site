@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commarce website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+    <section class="banner">
+      <!---header-start-->
+      <header>
+        <a href="#" class="logo">WATCH</a>
+        <div class="toggle" onclick=" toggle()"></div>
+      </header>
+      <!---header-end-->
+
+      <!----content-start-->
+      <div class="content">
+        <div class="textbx">
+          <h2>Future on<br />your hand</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem porro
+            nulla voluptas maxime illo assumenda accusantium, veritatis nemo sit
+            similique officia, at beatae ducimus reprehenderit, commodi laborum
+            soluta! Sit, repellat!
+          </p>
+          <a href="#">Bye Now</a>
+        </div>
+        <div class="imgbx">
+          <img src="image/watch.png" />
+        </div>
+      </div>
+      <!---contect-end-->
+
+
+
+      <!---social-start-->
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="image/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="image/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="image/instagram.png" /></a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </section>
+
+    <!---javascript-->
+    <script>
+      function toggle() {
+        const toggle = document.querySelector(".toggle");
+        const banner = document.querySelector(".banner");
+        toggle.classList.toggle("active");
+        banner.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
